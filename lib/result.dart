@@ -6,7 +6,6 @@ class Result extends StatelessWidget {
 
   Result(this.resultScore, this.resetHandler);
 
-//Remark Logic
   String get resultPhrase {
     String resultText;
     if (resultScore >= 41) {
@@ -36,22 +35,22 @@ class Result extends StatelessWidget {
             resultPhrase,
             style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
-          ), //Text
+          ),
           Text(
             'Score ' '$resultScore',
             style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
-          ), //Text
+          ),
           TextButton(
             child: Text(
               'Restart Quiz!',
-            ), //Text
+            ),
             onPressed: () {
               resetHandler();
             },
-          ), //FlatButton
-        ], //<Widget>[]
-      ), //Column
-    ); //Center
+          ),
+        ],
+      ),
+    );
   }
 }

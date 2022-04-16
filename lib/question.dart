@@ -14,7 +14,7 @@ Widget build(BuildContext context) {
 		questionText,
 		style: TextStyle(fontSize: 28),
 		textAlign: TextAlign.center,
-	), //Text
-	); //Container
+	),
+	);
 }
 }
